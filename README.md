@@ -40,8 +40,7 @@ If you are using [lazy.nvim](https://github.com/folke/lazy.nvim), you can instal
 ```lua
 {
   -- Replace with the actual path to your local plugin
-  dir = "~/path/to/neomux",
-  name = "neomux",
+  's-daveb/neomux',
   config = function()
     require("neomux").setup({
       no_mappings = false, -- Disable default key mappings if true
