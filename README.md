@@ -1,6 +1,8 @@
 neomux
 ==================
 This plugin is a shameless, quick and dirty AI-assisted port of Chris Toomey's [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator).
+When combined with a set of tmux key bindings, the plugin will allow you to navigate seamlessly between vim and tmux splits using a consistent set of hotkeys.
+
 I just wanted this for personal use, and was wondering how hard it would be to do port it with thes new genAI tools.
 I'm not sure that I want to maintain this, but feel free to fork it and use it for your own purposes.
 
