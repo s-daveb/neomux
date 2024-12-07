@@ -1,93 +1,16 @@
-# nvim-lua-plugin-template
+# A rough port of vim-tmux-navigator
 
-This repository is a template for Neovim plugins written in Lua.
+This is a very poorly made WIP port, generated with computer assistance, for my own tinkering purposes.
+Sharing this online for anyone who might want to tinker with it.
 
-The intention is that you use this template to create a new repository where you then adapt this readme and add your plugin code.
-The template includes the following:
+# License:
+The Unlicense
 
-- GitHub workflows and configurations to run linters and tests
-- Packaging of tagged releases and upload to [LuaRocks][luarocks]
-  if a [`LUAROCKS_API_KEY`][luarocks-api-key] is added
-  to the [GitHub Actions secrets][gh-actions-secrets]
-- Minimal test setup:
-  - A `scm` [rockspec][rockspec-format], `nvim-lua-plugin-scm-1.rockspec`
-  - A `.busted` file
-- EditorConfig
-- A .luacheckrc
+Original Plugin License:
+Copyright (c) 2017 Chris Toomey,
 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-To get started writing a Lua plugin, I recommend reading `:help lua-guide` and
-`:help write-plugin`.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-## Scope
-
-Anything that the majority of plugin authors will want to have is in scope of
-this starter template. Anything that is controversial is out-of-scope.
-
-## Usage
-
-- Click [Use this template][use-this-template]. Do not fork.
-- Rename `nvim-lua-plugin-scm-1.rockspec` and change the `package` name
-  to the name of your plugin.
-
-## Template License
-
-The template itself is licensed under the [MIT license](https://en.wikipedia.org/wiki/MIT_License).
-The template doesn't include a LICENSE file. You should add one after creating your repository.
-
----
-
-
-The remainder of the README is text that can be preserved in your plugin:
-
----
-
-
-## Development
-
-### Run tests
-
-
-Running tests requires either
-
-- [luarocks][luarocks]
-- or [busted][busted] and [nlua][nlua]
-
-to be installed[^1].
-
-[^1]: The test suite assumes that `nlua` has been installed
-      using luarocks into `~/.luarocks/bin/`.
-
-You can then run:
-
-```bash
-luarocks test --local
-# or
-busted
-```
-
-Or if you want to run a single test file:
-
-```bash
-luarocks test spec/path_to_file.lua --local
-# or
-busted spec/path_to_file.lua
-```
-
-If you see an error like `module 'busted.runner' not found`:
-
-```bash
-eval $(luarocks path --no-bin)
-```
-
-For this to work you need to have Lua 5.1 set as your default version for
-luarocks. If that's not the case you can pass `--lua-version 5.1` to all the
-luarocks commands above.
-
-[rockspec-format]: https://github.com/luarocks/luarocks/wiki/Rockspec-format
-[luarocks]: https://luarocks.org
-[luarocks-api-key]: https://luarocks.org/settings/api-keys
-[gh-actions-secrets]: https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository
-[busted]: https://lunarmodules.github.io/busted/
-[nlua]: https://github.com/mfussenegger/nlua
-[use-this-template]: https://github.com/new?template_name=nvim-lua-plugin-template&template_owner=nvim-lua
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
